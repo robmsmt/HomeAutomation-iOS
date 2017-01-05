@@ -1,0 +1,811 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11D50b" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="kXa-sq-H2O">
+    <dependencies>
+        <deployment defaultVersion="1296" identifier="iOS"/>
+        <development defaultVersion="4200" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Lvr-y7-urc">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ENz-U4-mWi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController definesPresentationContext="YES" id="kXa-sq-H2O" sceneMemberID="viewController">
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="WKC-1u-UEq">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Vtf-D8-RAS" kind="relationship" relationship="rootViewController" id="RXT-vU-QdM"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="-1372" y="-1887"/>
+        </scene>
+        <!--Energy View Controller-->
+        <scene sceneID="PNh-L9-gMg">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WNF-PH-Aq3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController modalTransitionStyle="partialCurl" id="dz7-D2-Bbi" customClass="EnergyViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Can-zo-mSl">
+                        <rect key="frame" x="0.0" y="64" width="1024" height="660"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" id="T6j-hQ-FU8">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="660"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <dataDetectorType key="dataDetectorTypes"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Xxa-u4-ZcC"/>
+                    <connections>
+                        <outlet property="webView" destination="T6j-hQ-FU8" id="uOp-p0-D4z"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1613" y="-2391"/>
+        </scene>
+        <!--Control View Controller - Control-->
+        <scene sceneID="kki-pK-amB">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qtu-PB-ocP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="fDf-fg-eWH" customClass="ControlViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="o8d-7f-tsQ">
+                        <rect key="frame" x="0.0" y="64" width="1024" height="660"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView contentMode="center" id="Sj9-rE-zsK">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="660"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Fpt-aB-gZr">
+                                <rect key="frame" x="942" y="637" width="66" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="TriggerManagerT.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="rVr-Hc-2U4" kind="push" id="1ly-te-tRl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="If1-Fe-IZp">
+                                <rect key="frame" x="5" y="634" width="109" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="GraphIMG.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="dz7-D2-Bbi" kind="push" id="LqO-ng-J4s"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="jsJ-vm-5ah" appends="YES" id="1r5-rZ-0Ti"/>
+                            <outletCollection property="gestureRecognizers" destination="FkA-uW-7K0" appends="YES" id="9gw-9D-h1V"/>
+                        </connections>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Control" id="IjK-Hx-MdM">
+                        <barButtonItem key="leftBarButtonItem" systemItem="action" id="L0v-k3-JIY">
+                            <connections>
+                                <action selector="settingsButtonPressed:" destination="fDf-fg-eWH" id="U2U-Wz-pVy"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Last Device" id="fpH-HG-cEI">
+                            <connections>
+                                <action selector="LastDeviceBtnPressed:" destination="fDf-fg-eWH" id="g1P-Zv-D6H"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="imageView1" destination="Sj9-rE-zsK" id="04p-WJ-NBb"/>
+                        <outlet property="lastDeviceButton" destination="fpH-HG-cEI" id="5Ua-tm-QaG"/>
+                        <outlet property="settingsButton" destination="L0v-k3-JIY" id="jO0-zx-ptJ"/>
+                    </connections>
+                </viewController>
+                <swipeGestureRecognizer direction="up" numberOfTouchesRequired="2" id="jsJ-vm-5ah">
+                    <connections>
+                        <action selector="upSwipe:" destination="fDf-fg-eWH" id="YzV-dZ-rgk"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="down" numberOfTouchesRequired="2" id="FkA-uW-7K0">
+                    <connections>
+                        <action selector="downSwipe:" destination="fDf-fg-eWH" id="A5d-nM-rlW"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2688" y="-1932"/>
+        </scene>
+        <!--Control Device Popup View Controller-->
+        <scene sceneID="mZ1-VA-ndj">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X4f-iE-kU9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="ControlDevicePopover" id="VCi-Cl-Qz4" customClass="ControlDevicePopupViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="TopLeft" id="dCd-JJ-uqd">
+                        <rect key="frame" x="0.0" y="20" width="300" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="MJz-OU-hz0">
+                                <rect key="frame" x="9" y="297" width="282" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Bat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="syP-ga-k9W">
+                                <rect key="frame" x="217" y="305" width="58" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.29803921568627451" green="0.33725490196078434" blue="0.42352941176470588" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Requesting..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="F0P-jr-aUQ">
+                                <rect key="frame" x="20" y="310" width="260" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="lTI-ic-yDQ">
+                                <rect key="frame" x="0.0" y="0.0" width="300" height="250"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="lightbulb.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="imageButtonPressed:" destination="VCi-Cl-Qz4" eventType="touchUpInside" id="pty-rn-C7V"/>
+                                </connections>
+                            </button>
+                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="wDY-MB-RTG">
+                                <rect key="frame" x="111" y="157" width="79" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="switchChanged:" destination="VCi-Cl-Qz4" eventType="valueChanged" id="eHP-rL-QPU"/>
+                                </connections>
+                            </switch>
+                            <tableView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="grouped" separatorStyle="singleLineEtched" allowsSelection="NO" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="O4G-Sd-6mg">
+                                <rect key="frame" x="0.0" y="357" width="300" height="182"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="0.88235300779342651" green="0.89411771297454834" blue="0.91372555494308472" alpha="0.0" colorSpace="deviceRGB"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="rSl-5e-sVq" detailTextLabel="3T0-bq-7Ng" style="IBUITableViewCellStyleValue1" id="e6P-oL-Cc8">
+                                        <rect key="frame" x="0.0" y="34" width="300" height="46"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="10" y="1" width="280" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rSl-5e-sVq">
+                                                    <rect key="frame" x="10" y="11" width="35" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3T0-bq-7Ng">
+                                                    <rect key="frame" x="226" y="11" width="44" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.30980393290519714" green="0.40000003576278687" blue="0.59607845544815063" alpha="1" colorSpace="deviceRGB"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="VCi-Cl-Qz4" id="GXc-At-ZvJ"/>
+                                    <outlet property="delegate" destination="VCi-Cl-Qz4" id="OnF-Ox-YXW"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="9f6-Dn-TEv">
+                                <rect key="frame" x="9" y="543" width="282" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" size="button"/>
+                                <state key="normal" backgroundImage="triggerbtn.png">
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="triggerBtnPressed:" destination="VCi-Cl-Qz4" eventType="touchUpInside" id="XjY-xd-nf3"/>
+                                </connections>
+                            </button>
+                            <progressView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" progress="0.5" id="sHK-F6-AF1">
+                                <rect key="frame" x="212" y="328" width="63" height="9"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </progressView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Current" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Jed-Mb-dbE">
+                                <rect key="frame" x="20" y="266" width="125" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" id="5I4-Lx-y4A">
+                                <rect key="frame" x="188" y="20" width="92" height="216"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.88235300779342651" green="0.89411771297454834" blue="0.91372555494308472" alpha="0.0" colorSpace="deviceRGB"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="batteryBar" destination="sHK-F6-AF1" id="W7p-X2-Mg2"/>
+                        <outlet property="currentLabel" destination="Jed-Mb-dbE" id="1fF-sf-n0O"/>
+                        <outlet property="deviceBattery" destination="syP-ga-k9W" id="3MU-5W-9Zo"/>
+                        <outlet property="deviceImage" destination="lTI-ic-yDQ" id="n5T-Wv-yUq"/>
+                        <outlet property="deviceSwitch" destination="wDY-MB-RTG" id="5Sp-w6-5Bo"/>
+                        <outlet property="deviceTriggerBtn" destination="9f6-Dn-TEv" id="8at-U8-6go"/>
+                        <outlet property="deviceValue" destination="F0P-jr-aUQ" id="WZq-WU-1Il"/>
+                        <outlet property="rangePicker" destination="5I4-Lx-y4A" id="vhO-Cc-xfG"/>
+                        <outlet property="tableView2" destination="O4G-Sd-6mg" id="iWC-fQ-5gr"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="3772" y="-1870"/>
+        </scene>
+        <!--Device Table View Controller-->
+        <scene sceneID="AFW-eN-jVc">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nQY-kn-Ioc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController storyboardIdentifier="devicePopover" id="PVh-62-ZLk" customClass="DeviceTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="55" sectionHeaderHeight="22" sectionFooterHeight="22" id="FId-Ns-Zzm">
+                        <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="55" id="SJE-Xm-gua">
+                                <rect key="frame" x="0.0" y="22" width="1024" height="55"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="54"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="PVh-62-ZLk" id="qns-Gs-cux"/>
+                            <outlet property="delegate" destination="PVh-62-ZLk" id="hJS-Gm-yfx"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="3755" y="-957"/>
+        </scene>
+        <!--Trigger View Controller-->
+        <scene sceneID="Arp-4n-Bgo">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="46z-3q-ghs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="ModalTriggerPopover" modalTransitionStyle="flipHorizontal" modalPresentationStyle="pageSheet" id="LbP-e2-SDY" customClass="TriggerViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qmo-Al-4N4">
+                        <rect key="frame" x="0.0" y="0.0" width="660" height="520"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Nhl-DO-PKN">
+                                <rect key="frame" x="622" y="0.0" width="38" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="X">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="closeBtnPressed:" destination="LbP-e2-SDY" eventType="touchUpInside" id="aI3-Ju-yKc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="106-ld-OuD">
+                                <rect key="frame" x="210" y="456" width="224" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Save Trigger">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveTriggerBtnPressed:" destination="LbP-e2-SDY" eventType="touchUpInside" id="3Nx-VV-eLe"/>
+                                </connections>
+                            </button>
+                            <pickerView contentMode="scaleToFill" id="M18-HR-DOG">
+                                <rect key="frame" x="105" y="99" width="450" height="216"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="LbP-e2-SDY" id="kZX-E6-8Z8"/>
+                                    <outlet property="delegate" destination="LbP-e2-SDY" id="8hE-GR-1qa"/>
+                                </connections>
+                            </pickerView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Sensor name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="XSw-z9-kg7">
+                                <rect key="frame" x="269" y="56" width="157" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="0.98580063868613144" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="conditionPicker" destination="M18-HR-DOG" id="n5f-Ym-b30"/>
+                        <outlet property="sensorNameLabel" destination="XSw-z9-kg7" id="k9e-ZA-oMU"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="4156" y="-2299"/>
+        </scene>
+        <!--First View Controller-->
+        <scene sceneID="qz2-rq-VnE">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ITr-iD-JUs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="Vtf-D8-RAS" customClass="FirstViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JUP-NO-Vum">
+                        <rect key="frame" x="0.0" y="64" width="1024" height="704"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="62h-Jc-s9E"/>
+                    <connections>
+                        <segue destination="Sel-aF-F84" kind="push" identifier="SetupSegue" id="qqK-W1-elf"/>
+                        <segue destination="fDf-fg-eWH" kind="push" identifier="ControlSegue" id="eQ4-ld-Hgw"/>
+                        <segue destination="Rv2-4I-SS0" kind="push" identifier="RoomViewSegue" id="fsQ-fM-dmg"/>
+                        <segue destination="Omg-no-Q9g" kind="push" identifier="DevicesViewSegue" id="Q1V-eW-OBi"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="-284" y="-1887"/>
+        </scene>
+        <!--Setup House View Controller - Setup - House-->
+        <scene sceneID="Lwq-TO-fd4">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="00s-fD-D6v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="Sel-aF-F84" customClass="SetupHouseViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Lcb-lb-NVG" customClass="HouseView">
+                        <rect key="frame" x="0.0" y="64" width="1024" height="660"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="g6B-0V-zr4">
+                                <rect key="frame" x="942" y="644" width="72" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Clear">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressedClear:" destination="Sel-aF-F84" eventType="touchUpInside" id="4yn-3U-JiQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.25098040699958801" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Setup - House" id="sDV-FD-ka3">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="hvj-SC-Lgy">
+                            <connections>
+                                <action selector="cancel:" destination="Sel-aF-F84" id="LGp-Oe-1GT"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="K77-w1-csP">
+                            <connections>
+                                <action selector="goToRoomsBtn:" destination="Sel-aF-F84" id="uJ8-R9-LMw"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="barbtn_done" destination="K77-w1-csP" id="7w3-Cm-ZDs"/>
+                        <outlet property="btn_clear" destination="g6B-0V-zr4" id="dR4-Jz-FYt"/>
+                        <outlet property="houseView" destination="Lcb-lb-NVG" id="EQy-gA-2x0"/>
+                        <segue destination="Rv2-4I-SS0" kind="push" identifier="RoomViewSegue" id="mxV-g7-SAw"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="352" y="-957"/>
+        </scene>
+        <!--Setup Rooms View Controller - Setup - Rooms-->
+        <scene sceneID="G0T-wu-EZG">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4dd-0Q-cD8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="Rv2-4I-SS0" customClass="SetupRoomsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="X4x-GM-SFb" customClass="RoomView">
+                        <rect key="frame" x="0.0" y="64" width="1024" height="660"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="W1f-le-vjh">
+                                <rect key="frame" x="911" y="614" width="105" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Delete Last">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="deleteLastRoom:" destination="Rv2-4I-SS0" eventType="touchUpInside" id="AvZ-eP-RXf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="GjX-Pk-Pl1">
+                                <rect key="frame" x="911" y="656" width="105" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Delete All">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="deleteAll:" destination="Rv2-4I-SS0" eventType="touchUpInside" id="Obf-iX-tcW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="skv-m2-KbZ" appends="YES" id="sy7-3a-eaH"/>
+                            <outletCollection property="gestureRecognizers" destination="yG2-Ju-2Ay" appends="YES" id="W2I-Zj-dAB"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" title="Setup - Rooms" id="5VJ-WM-qHC">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="s9j-yN-F0x">
+                            <connections>
+                                <action selector="goToDevices:" destination="Rv2-4I-SS0" id="1Ce-Y7-aSQ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="roomView" destination="X4x-GM-SFb" id="bYR-cK-Tcf"/>
+                        <segue destination="Omg-no-Q9g" kind="push" identifier="DevicesViewSegue" id="fGN-WU-ScR"/>
+                    </connections>
+                </viewController>
+                <swipeGestureRecognizer direction="up" numberOfTouchesRequired="2" id="skv-m2-KbZ">
+                    <connections>
+                        <action selector="upSwipe:" destination="Rv2-4I-SS0" id="dKu-3R-CeS"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="down" numberOfTouchesRequired="2" id="yG2-Ju-2Ay">
+                    <connections>
+                        <action selector="downSwipe:" destination="Rv2-4I-SS0" id="kcL-2i-nHq"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1524" y="-957"/>
+        </scene>
+        <!--Setup Devices View Controller - Setup - Devices-->
+        <scene sceneID="8OJ-nl-udy">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P4M-fI-6TD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="Omg-no-Q9g" customClass="SetupDevicesViewController" sceneMemberID="viewController">
+                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="0fY-6w-gSJ">
+                        <rect key="frame" x="0.0" y="64" width="1024" height="660"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView multipleTouchEnabled="YES" contentMode="center" id="RDU-MK-oAK">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="660"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="VHQ-zU-fMx" appends="YES" id="nkp-NA-8Ca"/>
+                                </connections>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="OiN-ks-yVb">
+                                <rect key="frame" x="883" y="29" width="121" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" size="button"/>
+                                <state key="normal" title="Add Device">
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnAddDevice:" destination="Omg-no-Q9g" eventType="touchUpInside" id="lyv-qK-nbZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="deD-EM-A6l">
+                                <rect key="frame" x="912" y="617" width="106" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="boldSystem" size="button"/>
+                                <state key="normal" title="Delete Last">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnUndo:" destination="Omg-no-Q9g" eventType="touchUpInside" id="37g-Fa-s7y"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dM8-T6-k6e">
+                                <rect key="frame" x="912" y="661" width="106" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Clear All">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnClearAllDevices:" destination="Omg-no-Q9g" eventType="touchUpInside" id="Oeb-gt-jrK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Yap-cm-VaP" appends="YES" id="HjI-U4-pXE"/>
+                            <outletCollection property="gestureRecognizers" destination="uuK-Hk-2sn" appends="YES" id="tbn-9T-m78"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" title="Setup - Devices" id="acS-Qd-Eaq">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="vgf-EN-hgL">
+                            <connections>
+                                <action selector="doneButtonPressed:" destination="Omg-no-Q9g" id="i1G-Rn-38C"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="imageView1" destination="RDU-MK-oAK" id="IzC-vV-yrU"/>
+                    </connections>
+                </viewController>
+                <pongPressGestureRecognizer enabled="NO" allowableMovement="10" minimumPressDuration="0.5" id="VHQ-zU-fMx"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="4c9-vX-sAL"/>
+                <swipeGestureRecognizer direction="up" numberOfTouchesRequired="2" id="Yap-cm-VaP">
+                    <connections>
+                        <action selector="upSwipe:" destination="Omg-no-Q9g" id="ZFk-xS-mNv"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="down" numberOfTouchesRequired="2" id="uuK-Hk-2sn">
+                    <connections>
+                        <action selector="downSwipe:" destination="Omg-no-Q9g" id="2Iy-ue-EpN"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2688" y="-957"/>
+        </scene>
+        <!--Settings Table View Controller-->
+        <scene sceneID="eBm-ji-kLy">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="atS-BW-0xM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController storyboardIdentifier="settingsPopover" id="2f7-LK-BNs" customClass="SettingsTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="m3A-QF-zkf">
+                        <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="2f7-LK-BNs" id="hHn-i7-clK"/>
+                            <outlet property="delegate" destination="2f7-LK-BNs" id="NjI-cn-O0E"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="1235" y="-3306"/>
+        </scene>
+        <!--Trigger Table View Controller - Trigger Manager-->
+        <scene sceneID="jol-Py-zBZ">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vzt-8h-juV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController modalTransitionStyle="flipHorizontal" id="rVr-Hc-2U4" customClass="TriggerTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="singleLineEtched" rowHeight="63" sectionHeaderHeight="10" sectionFooterHeight="10" id="fyi-cc-2MP">
+                        <rect key="frame" x="0.0" y="64" width="1024" height="660"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="f83-9R-xII" rowHeight="63" style="IBUITableViewCellStyleDefault" id="3id-x5-K3e">
+                                <rect key="frame" x="0.0" y="54" width="1024" height="65"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="45" y="1" width="934" height="62"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="f83-9R-xII">
+                                            <rect key="frame" x="10" y="0.0" width="914" height="62"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="rVr-Hc-2U4" id="ykn-2Y-fHA"/>
+                            <outlet property="delegate" destination="rVr-Hc-2U4" id="bOB-kR-QHF"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Trigger Manager" id="327-5p-Chg">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="gRY-z3-W13">
+                            <connections>
+                                <action selector="addTriggerBtnPressed:" destination="rVr-Hc-2U4" id="B5s-fJ-Nol"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="2592" y="-3512"/>
+        </scene>
+        <!--Time Trigger View Controller-->
+        <scene sceneID="quR-Gs-Vjm">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="57Q-iY-fJ9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="ModalTimeTriggerPopover" modalTransitionStyle="flipHorizontal" modalPresentationStyle="pageSheet" id="cuY-6v-36I" customClass="TimeTriggerViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6gv-2M-Pku">
+                        <rect key="frame" x="0.0" y="0.0" width="660" height="520"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5LG-Lq-Ikd">
+                                <rect key="frame" x="622" y="0.0" width="38" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="X">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="closeBtnPressed:" destination="cuY-6v-36I" eventType="touchUpInside" id="XYG-da-9Gn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="AvJ-hg-WIz">
+                                <rect key="frame" x="210" y="456" width="224" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Save Trigger">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveTriggerBtnPressed:" destination="cuY-6v-36I" eventType="touchUpInside" id="4fc-i5-BYp"/>
+                                </connections>
+                            </button>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" id="iXb-fo-fpt">
+                                <rect key="frame" x="128" y="120" width="138" height="216"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <date key="date" timeIntervalSinceReferenceDate="355693802.01441503">
+                                    <!--2012-04-09 19:50:02 +0000-->
+                                </date>
+                                <locale key="locale" localeIdentifier="en_GB"/>
+                                <timeZone key="timeZone" name="America/Los_Angeles">
+                                    <data key="data">
+VFppZgAAAAAAAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAC5AAAABAAAABCepkign7sVkKCGKqChmveQ
+y4kaoNIj9HDSYSYQ1v50INiArZDa/tGg28CQENzes6DdqayQ3r6VoN+JjpDgnneg4WlwkOJ+WaDjSVKQ
+5F47oOUpNJDmR1gg5xJREOgnOiDo8jMQ6gccIOrSFRDr5v4g7LH3EO3G4CDukdkQ76/8oPBxuxDxj96g
+8n/BkPNvwKD0X6OQ9U+ioPY/hZD3L4Sg+CiiEPkPZqD6CIQQ+viDIPvoZhD82GUg/chIEP64RyD/qCoQ
+AJgpIAGIDBACeAsgA3EokARhJ6AFUQqQBkEJoAcw7JAHjUOgCRDOkAmtvyAK8LCQC+CvoAzZzRANwJGg
+DrmvEA+priAQmZEQEYmQIBJ5cxATaXIgFFlVEBVJVCAWOTcQFyk2IBgiU5AZCRggGgI1kBryNKAb4heQ
+HNIWoB3B+ZAesfigH6HbkCB2KyAhgb2QIlYNICNq2hAkNe8gJUq8ECYV0SAnKp4QJ/7toCkKgBAp3s+g
+KupiECu+saAs036QLZ6ToC6zYJAvfnWgMJNCkDFnkiAycySQM0d0IDRTBpA1J1YgNjLokDcHOCA4HAUQ
+OOcaIDn75xA6xvwgO9vJEDywGKA9u6sQPo/6oD+bjRBAb9ygQYSpkEJPvqBDZIuQRC+goEVEbZBF89Mg
+Ry2KEEfTtSBJDWwQSbOXIErtThBLnLOgTNZqkE18laBOtkyQT1x3oFCWLpBRPFmgUnYQkFMcO6BUVfKQ
+VPwdoFY11JBW5TogWB7xEFjFHCBZ/tMQWqT+IFvetRBchOAgXb6XEF5kwiBfnnkQYE3eoGGHlZBiLcCg
+Y2d3kGQNoqBlR1mQZe2EoGcnO5BnzWagaQcdkGmtSKBq5v+Qa5ZlIGzQHBBtdkcgbq/+EG9WKSBwj+AQ
+cTYLIHJvwhBzFe0gdE+kEHT/CaB2OMCQdt7roHgYopB4vs2gefiEkHqer6B72GaQfH6RoH24SJB+XnOg
+f5gqkAABAAECAwEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEA
+AQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEA
+AQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEA
+AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
+</data>
+                                </timeZone>
+                            </datePicker>
+                            <pickerView contentMode="scaleToFill" id="WAd-op-TWo">
+                                <rect key="frame" x="266" y="120" width="263" height="216"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="cuY-6v-36I" id="fRu-Rd-Z2M"/>
+                                    <outlet property="delegate" destination="cuY-6v-36I" id="fEg-sA-VdJ"/>
+                                </connections>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="actionPicker" destination="WAd-op-TWo" id="51C-LV-6qm"/>
+                        <outlet property="timePicker" destination="iXb-fo-fpt" id="8dv-mx-S4r"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="3654" y="-3512"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="GraphIMG.png" width="200" height="87"/>
+        <image name="TriggerManagerT.png" width="200" height="87"/>
+        <image name="lightbulb.png" width="242" height="242"/>
+        <image name="triggerbtn.png" width="309" height="50"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
+        <simulatedOrientationMetrics key="orientation" orientation="landscapeRight"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="mxV-g7-SAw"/>
+        <segue reference="fGN-WU-ScR"/>
+    </inferredMetricsTieBreakers>
+</document>

@@ -1,0 +1,634 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D4356BE615435AEC00E8EE02 /* SharedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4356BE515435AEC00E8EE02 /* SharedViewController.m */; };
+		D4356BEA1543691000E8EE02 /* GraphIMG.png in Resources */ = {isa = PBXBuildFile; fileRef = D4356BE81543691000E8EE02 /* GraphIMG.png */; };
+		D4356BEB1543691000E8EE02 /* TriggerManagerT.png in Resources */ = {isa = PBXBuildFile; fileRef = D4356BE91543691000E8EE02 /* TriggerManagerT.png */; };
+		D4431C851518D04500F613B8 /* HouseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D4431C841518D04500F613B8 /* HouseManager.m */; };
+		D456DC071520B72A007CF3C7 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D456DC061520B72A007CF3C7 /* CFNetwork.framework */; };
+		D456DC261520B8B6007CF3C7 /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = D456DC1D1520B8B6007CF3C7 /* DDAbstractDatabaseLogger.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D456DC271520B8B6007CF3C7 /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = D456DC1F1520B8B6007CF3C7 /* DDASLLogger.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D456DC281520B8B6007CF3C7 /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = D456DC211520B8B6007CF3C7 /* DDFileLogger.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D456DC291520B8B6007CF3C7 /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = D456DC231520B8B6007CF3C7 /* DDLog.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D456DC2A1520B8B6007CF3C7 /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = D456DC251520B8B6007CF3C7 /* DDTTYLogger.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D456DC2E1520B940007CF3C7 /* ControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D456DC2D1520B940007CF3C7 /* ControlViewController.m */; };
+		D456DC391520BF8D007CF3C7 /* DevicesManager.h in Resources */ = {isa = PBXBuildFile; fileRef = D456DC381520BF8D007CF3C7 /* DevicesManager.h */; };
+		D456DC3B1520BFA1007CF3C7 /* DevicesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D456DC3A1520BFA1007CF3C7 /* DevicesManager.m */; };
+		D456DC3E1520C010007CF3C7 /* Device.m in Sources */ = {isa = PBXBuildFile; fileRef = D456DC3D1520C010007CF3C7 /* Device.m */; };
+		D456DC4815212B20007CF3C7 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = D456DC4715212B20007CF3C7 /* GCDAsyncSocket.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D471CF6D1538ACF60095C226 /* SharedNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = D471CF6C1538ACF60095C226 /* SharedNetworking.m */; };
+		D48839A0153241D300CA6DE4 /* SettingsTableViewController.m in Resources */ = {isa = PBXBuildFile; fileRef = D488399F153241D300CA6DE4 /* SettingsTableViewController.m */; };
+		D48839A51532601000CA6DE4 /* SettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D488399F153241D300CA6DE4 /* SettingsTableViewController.m */; };
+		D48839A815333C2C00CA6DE4 /* TriggerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D48839A715333C2C00CA6DE4 /* TriggerViewController.m */; };
+		D48839AF15336EAA00CA6DE4 /* TimeTriggerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D48839AE15336EA900CA6DE4 /* TimeTriggerViewController.m */; };
+		D48839B215337A1500CA6DE4 /* TriggerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D48839B115337A1300CA6DE4 /* TriggerTableViewController.m */; };
+		D48839B51533954900CA6DE4 /* TriggerManager.m in Resources */ = {isa = PBXBuildFile; fileRef = D48839B41533954900CA6DE4 /* TriggerManager.m */; };
+		D48839BE153447D700CA6DE4 /* TriggerTime.m in Sources */ = {isa = PBXBuildFile; fileRef = D48839BD153447D700CA6DE4 /* TriggerTime.m */; };
+		D48839C115344DF400CA6DE4 /* TriggerSensor.m in Sources */ = {isa = PBXBuildFile; fileRef = D48839C015344DF300CA6DE4 /* TriggerSensor.m */; };
+		D48839C2153451BF00CA6DE4 /* TriggerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D48839B41533954900CA6DE4 /* TriggerManager.m */; };
+		D48839CA1536289500CA6DE4 /* settingsbackground.png in Resources */ = {isa = PBXBuildFile; fileRef = D48839C91536289500CA6DE4 /* settingsbackground.png */; };
+		D48839CF15363C9F00CA6DE4 /* lightbulb_on.png in Resources */ = {isa = PBXBuildFile; fileRef = D48839CC15363C9E00CA6DE4 /* lightbulb_on.png */; };
+		D48839D015363C9F00CA6DE4 /* lightbulb.png in Resources */ = {isa = PBXBuildFile; fileRef = D48839CD15363C9F00CA6DE4 /* lightbulb.png */; };
+		D48839D21536407600CA6DE4 /* humidity.png in Resources */ = {isa = PBXBuildFile; fileRef = D48839D11536407600CA6DE4 /* humidity.png */; };
+		D48839D41536452F00CA6DE4 /* lightlevel.png in Resources */ = {isa = PBXBuildFile; fileRef = D48839D31536452F00CA6DE4 /* lightlevel.png */; };
+		D48839DE15365C0000CA6DE4 /* triggerbtn.png in Resources */ = {isa = PBXBuildFile; fileRef = D48839DD15365C0000CA6DE4 /* triggerbtn.png */; };
+		D48E5878151CB51000A20A8A /* RoomView.m in Sources */ = {isa = PBXBuildFile; fileRef = D48E5875151CB51000A20A8A /* RoomView.m */; };
+		D48E5879151CB51000A20A8A /* SetupRoomsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D48E5877151CB51000A20A8A /* SetupRoomsViewController.m */; };
+		D48E587B151CB58800A20A8A /* RoomManager.m in Resources */ = {isa = PBXBuildFile; fileRef = D48E587A151CB58800A20A8A /* RoomManager.m */; };
+		D48E5880151CC5AE00A20A8A /* RoomManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D48E587A151CB58800A20A8A /* RoomManager.m */; };
+		D4974D7D153CE1AB00F45CF9 /* EnergyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4974D7C153CE1AB00F45CF9 /* EnergyViewController.m */; };
+		D49C6203151D47A8003B1EDE /* Room.m in Sources */ = {isa = PBXBuildFile; fileRef = D49C6202151D47A7003B1EDE /* Room.m */; };
+		D4AD9049151F8EDA0026BF46 /* SetupDevicesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4AD9048151F8EDA0026BF46 /* SetupDevicesViewController.m */; };
+		D4AD9054151FC80E0026BF46 /* DeviceTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4AD9053151FC80D0026BF46 /* DeviceTableViewController.m */; };
+		D4AD9056151FD2280026BF46 /* thermometer.png in Resources */ = {isa = PBXBuildFile; fileRef = D4AD9055151FD2280026BF46 /* thermometer.png */; };
+		D4BCD4B8152DA52B00DFA7D4 /* ControlDevicePopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4BCD4B7152DA52B00DFA7D4 /* ControlDevicePopupViewController.m */; };
+		D4C6689E15598C660019F23B /* deviceDatabase.sql in Resources */ = {isa = PBXBuildFile; fileRef = D4C6689D15598C660019F23B /* deviceDatabase.sql */; };
+		D4CAE57D151640810066C821 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4CAE57C151640810066C821 /* UIKit.framework */; };
+		D4CAE57F151640810066C821 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4CAE57E151640810066C821 /* Foundation.framework */; };
+		D4CAE581151640810066C821 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4CAE580151640810066C821 /* CoreGraphics.framework */; };
+		D4CAE587151640810066C821 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D4CAE585151640810066C821 /* InfoPlist.strings */; };
+		D4CAE589151640810066C821 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D4CAE588151640810066C821 /* main.m */; };
+		D4CAE58D151640810066C821 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D4CAE58C151640810066C821 /* AppDelegate.m */; };
+		D4CAE590151640810066C821 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4CAE58E151640810066C821 /* MainStoryboard_iPhone.storyboard */; };
+		D4CAE593151640820066C821 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4CAE591151640810066C821 /* MainStoryboard_iPad.storyboard */; };
+		D4CAE59E151643670066C821 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4CAE59D151643670066C821 /* FirstViewController.m */; };
+		D4CAE5AA1516476E0066C821 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = D4CAE5A91516476E0066C821 /* background.png */; };
+		D4CAE5AD15164CD50066C821 /* SetupHouseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4CAE5AC15164CD50066C821 /* SetupHouseViewController.m */; };
+		D4CAE5B0151651310066C821 /* HouseView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4CAE5AF151651300066C821 /* HouseView.m */; };
+		D4D821B8154582B3004AB66E /* powermeter.png in Resources */ = {isa = PBXBuildFile; fileRef = D4D821B7154582B3004AB66E /* powermeter.png */; };
+		D4EB983A1539C80900B931A1 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D4EB98391539C80900B931A1 /* libsqlite3.0.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D4356BE415435AEC00E8EE02 /* SharedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharedViewController.h; sourceTree = "<group>"; };
+		D4356BE515435AEC00E8EE02 /* SharedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SharedViewController.m; sourceTree = "<group>"; };
+		D4356BE81543691000E8EE02 /* GraphIMG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GraphIMG.png; sourceTree = "<group>"; };
+		D4356BE91543691000E8EE02 /* TriggerManagerT.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TriggerManagerT.png; sourceTree = "<group>"; };
+		D4431C831518D04500F613B8 /* HouseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HouseManager.h; sourceTree = "<group>"; };
+		D4431C841518D04500F613B8 /* HouseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HouseManager.m; sourceTree = "<group>"; };
+		D456DC061520B72A007CF3C7 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		D456DC1C1520B8B6007CF3C7 /* DDAbstractDatabaseLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDAbstractDatabaseLogger.h; sourceTree = "<group>"; };
+		D456DC1D1520B8B6007CF3C7 /* DDAbstractDatabaseLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDAbstractDatabaseLogger.m; sourceTree = "<group>"; };
+		D456DC1E1520B8B6007CF3C7 /* DDASLLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDASLLogger.h; sourceTree = "<group>"; };
+		D456DC1F1520B8B6007CF3C7 /* DDASLLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDASLLogger.m; sourceTree = "<group>"; };
+		D456DC201520B8B6007CF3C7 /* DDFileLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDFileLogger.h; sourceTree = "<group>"; };
+		D456DC211520B8B6007CF3C7 /* DDFileLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDFileLogger.m; sourceTree = "<group>"; };
+		D456DC221520B8B6007CF3C7 /* DDLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLog.h; sourceTree = "<group>"; };
+		D456DC231520B8B6007CF3C7 /* DDLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDLog.m; sourceTree = "<group>"; };
+		D456DC241520B8B6007CF3C7 /* DDTTYLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTTYLogger.h; sourceTree = "<group>"; };
+		D456DC251520B8B6007CF3C7 /* DDTTYLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTTYLogger.m; sourceTree = "<group>"; };
+		D456DC2C1520B940007CF3C7 /* ControlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControlViewController.h; sourceTree = "<group>"; };
+		D456DC2D1520B940007CF3C7 /* ControlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControlViewController.m; sourceTree = "<group>"; };
+		D456DC381520BF8D007CF3C7 /* DevicesManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DevicesManager.h; sourceTree = "<group>"; };
+		D456DC3A1520BFA1007CF3C7 /* DevicesManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DevicesManager.m; sourceTree = "<group>"; };
+		D456DC3C1520C001007CF3C7 /* Device.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Device.h; sourceTree = "<group>"; };
+		D456DC3D1520C010007CF3C7 /* Device.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Device.m; sourceTree = "<group>"; };
+		D456DC4615212B20007CF3C7 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		D456DC4715212B20007CF3C7 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		D471CF6B1538ACF60095C226 /* SharedNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharedNetworking.h; sourceTree = "<group>"; };
+		D471CF6C1538ACF60095C226 /* SharedNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SharedNetworking.m; sourceTree = "<group>"; };
+		D488399E153241C000CA6DE4 /* SettingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsTableViewController.h; sourceTree = "<group>"; };
+		D488399F153241D300CA6DE4 /* SettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsTableViewController.m; sourceTree = "<group>"; };
+		D48839A615333C2C00CA6DE4 /* TriggerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriggerViewController.h; sourceTree = "<group>"; };
+		D48839A715333C2C00CA6DE4 /* TriggerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TriggerViewController.m; sourceTree = "<group>"; };
+		D48839AD15336E9800CA6DE4 /* TimeTriggerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeTriggerViewController.h; sourceTree = "<group>"; };
+		D48839AE15336EA900CA6DE4 /* TimeTriggerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeTriggerViewController.m; sourceTree = "<group>"; };
+		D48839B015337A1200CA6DE4 /* TriggerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriggerTableViewController.h; sourceTree = "<group>"; };
+		D48839B115337A1300CA6DE4 /* TriggerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TriggerTableViewController.m; sourceTree = "<group>"; };
+		D48839B41533954900CA6DE4 /* TriggerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TriggerManager.m; sourceTree = "<group>"; };
+		D48839B61533956300CA6DE4 /* TriggerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriggerManager.h; sourceTree = "<group>"; };
+		D48839BC153447D700CA6DE4 /* TriggerTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriggerTime.h; sourceTree = "<group>"; };
+		D48839BD153447D700CA6DE4 /* TriggerTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TriggerTime.m; sourceTree = "<group>"; };
+		D48839BF15344DF300CA6DE4 /* TriggerSensor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriggerSensor.h; sourceTree = "<group>"; };
+		D48839C015344DF300CA6DE4 /* TriggerSensor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TriggerSensor.m; sourceTree = "<group>"; };
+		D48839C91536289500CA6DE4 /* settingsbackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settingsbackground.png; sourceTree = "<group>"; };
+		D48839CC15363C9E00CA6DE4 /* lightbulb_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lightbulb_on.png; sourceTree = "<group>"; };
+		D48839CD15363C9F00CA6DE4 /* lightbulb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lightbulb.png; sourceTree = "<group>"; };
+		D48839D11536407600CA6DE4 /* humidity.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = humidity.png; sourceTree = "<group>"; };
+		D48839D31536452F00CA6DE4 /* lightlevel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lightlevel.png; sourceTree = "<group>"; };
+		D48839DD15365C0000CA6DE4 /* triggerbtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = triggerbtn.png; sourceTree = "<group>"; };
+		D48E5874151CB51000A20A8A /* RoomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoomView.h; sourceTree = "<group>"; };
+		D48E5875151CB51000A20A8A /* RoomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoomView.m; sourceTree = "<group>"; };
+		D48E5876151CB51000A20A8A /* SetupRoomsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetupRoomsViewController.h; sourceTree = "<group>"; };
+		D48E5877151CB51000A20A8A /* SetupRoomsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetupRoomsViewController.m; sourceTree = "<group>"; };
+		D48E587A151CB58800A20A8A /* RoomManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoomManager.m; sourceTree = "<group>"; };
+		D48E587C151CB5AE00A20A8A /* RoomManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoomManager.h; sourceTree = "<group>"; };
+		D4974D7B153CE1AB00F45CF9 /* EnergyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnergyViewController.h; sourceTree = "<group>"; };
+		D4974D7C153CE1AB00F45CF9 /* EnergyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnergyViewController.m; sourceTree = "<group>"; };
+		D49C6201151D47A7003B1EDE /* Room.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Room.h; sourceTree = "<group>"; };
+		D49C6202151D47A7003B1EDE /* Room.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Room.m; sourceTree = "<group>"; };
+		D4AD9047151F8EDA0026BF46 /* SetupDevicesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetupDevicesViewController.h; sourceTree = "<group>"; usesTabs = 1; };
+		D4AD9048151F8EDA0026BF46 /* SetupDevicesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetupDevicesViewController.m; sourceTree = "<group>"; };
+		D4AD9052151FC80D0026BF46 /* DeviceTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceTableViewController.h; sourceTree = "<group>"; };
+		D4AD9053151FC80D0026BF46 /* DeviceTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceTableViewController.m; sourceTree = "<group>"; };
+		D4AD9055151FD2280026BF46 /* thermometer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thermometer.png; sourceTree = "<group>"; };
+		D4BCD4B6152DA52B00DFA7D4 /* ControlDevicePopupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControlDevicePopupViewController.h; sourceTree = "<group>"; };
+		D4BCD4B7152DA52B00DFA7D4 /* ControlDevicePopupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControlDevicePopupViewController.m; sourceTree = "<group>"; };
+		D4C6689D15598C660019F23B /* deviceDatabase.sql */ = {isa = PBXFileReference; lastKnownFileType = file; path = deviceDatabase.sql; sourceTree = "<group>"; };
+		D4CAE578151640810066C821 /* dis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dis.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4CAE57C151640810066C821 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D4CAE57E151640810066C821 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D4CAE580151640810066C821 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D4CAE584151640810066C821 /* dis-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "dis-Info.plist"; sourceTree = "<group>"; };
+		D4CAE586151640810066C821 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D4CAE588151640810066C821 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D4CAE58A151640810066C821 /* dis-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "dis-Prefix.pch"; sourceTree = "<group>"; };
+		D4CAE58B151640810066C821 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D4CAE58C151640810066C821 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D4CAE58F151640810066C821 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		D4CAE592151640820066C821 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		D4CAE59C151643670066C821 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		D4CAE59D151643670066C821 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		D4CAE5A91516476E0066C821 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		D4CAE5AB15164CD50066C821 /* SetupHouseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetupHouseViewController.h; sourceTree = "<group>"; };
+		D4CAE5AC15164CD50066C821 /* SetupHouseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetupHouseViewController.m; sourceTree = "<group>"; };
+		D4CAE5AE151651300066C821 /* HouseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HouseView.h; sourceTree = "<group>"; };
+		D4CAE5AF151651300066C821 /* HouseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HouseView.m; sourceTree = "<group>"; };
+		D4D821B7154582B3004AB66E /* powermeter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = powermeter.png; sourceTree = "<group>"; };
+		D4EB98391539C80900B931A1 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D4CAE575151640810066C821 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4EB983A1539C80900B931A1 /* libsqlite3.0.dylib in Frameworks */,
+				D456DC071520B72A007CF3C7 /* CFNetwork.framework in Frameworks */,
+				D4CAE57D151640810066C821 /* UIKit.framework in Frameworks */,
+				D4CAE57F151640810066C821 /* Foundation.framework in Frameworks */,
+				D4CAE581151640810066C821 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D4431C911518F2B000F613B8 /* House */ = {
+			isa = PBXGroup;
+			children = (
+				D48839C61535AF3800CA6DE4 /* Manager */,
+				D4CAE5AB15164CD50066C821 /* SetupHouseViewController.h */,
+				D4CAE5AC15164CD50066C821 /* SetupHouseViewController.m */,
+				D4CAE5AE151651300066C821 /* HouseView.h */,
+				D4CAE5AF151651300066C821 /* HouseView.m */,
+			);
+			name = House;
+			sourceTree = "<group>";
+		};
+		D4431C921519689900F613B8 /* Rooms */ = {
+			isa = PBXGroup;
+			children = (
+				D48839C51535AF2700CA6DE4 /* Manager */,
+				D48E5876151CB51000A20A8A /* SetupRoomsViewController.h */,
+				D48E5877151CB51000A20A8A /* SetupRoomsViewController.m */,
+				D48E5874151CB51000A20A8A /* RoomView.h */,
+				D48E5875151CB51000A20A8A /* RoomView.m */,
+			);
+			name = Rooms;
+			sourceTree = "<group>";
+		};
+		D456DC1B1520B89F007CF3C7 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				D471CF6B1538ACF60095C226 /* SharedNetworking.h */,
+				D471CF6C1538ACF60095C226 /* SharedNetworking.m */,
+				D456DC4615212B20007CF3C7 /* GCDAsyncSocket.h */,
+				D456DC4715212B20007CF3C7 /* GCDAsyncSocket.m */,
+				D456DC2B1520B8BC007CF3C7 /* DDLog */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		D456DC2B1520B8BC007CF3C7 /* DDLog */ = {
+			isa = PBXGroup;
+			children = (
+				D456DC1C1520B8B6007CF3C7 /* DDAbstractDatabaseLogger.h */,
+				D456DC1D1520B8B6007CF3C7 /* DDAbstractDatabaseLogger.m */,
+				D456DC1E1520B8B6007CF3C7 /* DDASLLogger.h */,
+				D456DC1F1520B8B6007CF3C7 /* DDASLLogger.m */,
+				D456DC201520B8B6007CF3C7 /* DDFileLogger.h */,
+				D456DC211520B8B6007CF3C7 /* DDFileLogger.m */,
+				D456DC221520B8B6007CF3C7 /* DDLog.h */,
+				D456DC231520B8B6007CF3C7 /* DDLog.m */,
+				D456DC241520B8B6007CF3C7 /* DDTTYLogger.h */,
+				D456DC251520B8B6007CF3C7 /* DDTTYLogger.m */,
+			);
+			name = DDLog;
+			sourceTree = "<group>";
+		};
+		D456DC3F1520C03B007CF3C7 /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				D4974D7B153CE1AB00F45CF9 /* EnergyViewController.h */,
+				D4974D7C153CE1AB00F45CF9 /* EnergyViewController.m */,
+				D48839B315337A4200CA6DE4 /* Trigger */,
+				D488399E153241C000CA6DE4 /* SettingsTableViewController.h */,
+				D488399F153241D300CA6DE4 /* SettingsTableViewController.m */,
+				D4BCD4B6152DA52B00DFA7D4 /* ControlDevicePopupViewController.h */,
+				D4BCD4B7152DA52B00DFA7D4 /* ControlDevicePopupViewController.m */,
+				D456DC2C1520B940007CF3C7 /* ControlViewController.h */,
+				D456DC2D1520B940007CF3C7 /* ControlViewController.m */,
+			);
+			name = Control;
+			sourceTree = "<group>";
+		};
+		D456DC401520C051007CF3C7 /* Setup */ = {
+			isa = PBXGroup;
+			children = (
+				D4AD9019151F62BD0026BF46 /* Devices */,
+				D4431C921519689900F613B8 /* Rooms */,
+				D4431C911518F2B000F613B8 /* House */,
+			);
+			name = Setup;
+			sourceTree = "<group>";
+		};
+		D48839B315337A4200CA6DE4 /* Trigger */ = {
+			isa = PBXGroup;
+			children = (
+				D48839C31535AF0200CA6DE4 /* Manager */,
+				D48839AD15336E9800CA6DE4 /* TimeTriggerViewController.h */,
+				D48839AE15336EA900CA6DE4 /* TimeTriggerViewController.m */,
+				D48839B015337A1200CA6DE4 /* TriggerTableViewController.h */,
+				D48839B115337A1300CA6DE4 /* TriggerTableViewController.m */,
+				D48839A615333C2C00CA6DE4 /* TriggerViewController.h */,
+				D48839A715333C2C00CA6DE4 /* TriggerViewController.m */,
+			);
+			name = Trigger;
+			sourceTree = "<group>";
+		};
+		D48839C31535AF0200CA6DE4 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				D48839BC153447D700CA6DE4 /* TriggerTime.h */,
+				D48839BD153447D700CA6DE4 /* TriggerTime.m */,
+				D48839BF15344DF300CA6DE4 /* TriggerSensor.h */,
+				D48839C015344DF300CA6DE4 /* TriggerSensor.m */,
+				D48839B61533956300CA6DE4 /* TriggerManager.h */,
+				D48839B41533954900CA6DE4 /* TriggerManager.m */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		D48839C41535AF1400CA6DE4 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				D456DC3C1520C001007CF3C7 /* Device.h */,
+				D456DC3D1520C010007CF3C7 /* Device.m */,
+				D456DC381520BF8D007CF3C7 /* DevicesManager.h */,
+				D456DC3A1520BFA1007CF3C7 /* DevicesManager.m */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		D48839C51535AF2700CA6DE4 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				D49C6201151D47A7003B1EDE /* Room.h */,
+				D49C6202151D47A7003B1EDE /* Room.m */,
+				D48E587C151CB5AE00A20A8A /* RoomManager.h */,
+				D48E587A151CB58800A20A8A /* RoomManager.m */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		D48839C61535AF3800CA6DE4 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				D4431C831518D04500F613B8 /* HouseManager.h */,
+				D4431C841518D04500F613B8 /* HouseManager.m */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		D4AD9019151F62BD0026BF46 /* Devices */ = {
+			isa = PBXGroup;
+			children = (
+				D48839C41535AF1400CA6DE4 /* Manager */,
+				D4AD9052151FC80D0026BF46 /* DeviceTableViewController.h */,
+				D4AD9053151FC80D0026BF46 /* DeviceTableViewController.m */,
+				D4AD9047151F8EDA0026BF46 /* SetupDevicesViewController.h */,
+				D4AD9048151F8EDA0026BF46 /* SetupDevicesViewController.m */,
+			);
+			name = Devices;
+			sourceTree = "<group>";
+		};
+		D4CAE56D151640810066C821 = {
+			isa = PBXGroup;
+			children = (
+				D4EB98391539C80900B931A1 /* libsqlite3.0.dylib */,
+				D4CAE582151640810066C821 /* dis */,
+				D4CAE57B151640810066C821 /* Frameworks */,
+				D4CAE579151640810066C821 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D4CAE579151640810066C821 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D4CAE578151640810066C821 /* dis.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D4CAE57B151640810066C821 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D456DC061520B72A007CF3C7 /* CFNetwork.framework */,
+				D4CAE57C151640810066C821 /* UIKit.framework */,
+				D4CAE57E151640810066C821 /* Foundation.framework */,
+				D4CAE580151640810066C821 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D4CAE582151640810066C821 /* dis */ = {
+			isa = PBXGroup;
+			children = (
+				D4CAE58B151640810066C821 /* AppDelegate.h */,
+				D4CAE58C151640810066C821 /* AppDelegate.m */,
+				D4CAE59C151643670066C821 /* FirstViewController.h */,
+				D4CAE59D151643670066C821 /* FirstViewController.m */,
+				D4CAE58E151640810066C821 /* MainStoryboard_iPhone.storyboard */,
+				D4CAE591151640810066C821 /* MainStoryboard_iPad.storyboard */,
+				D4356BE415435AEC00E8EE02 /* SharedViewController.h */,
+				D4356BE515435AEC00E8EE02 /* SharedViewController.m */,
+				D456DC3F1520C03B007CF3C7 /* Control */,
+				D456DC401520C051007CF3C7 /* Setup */,
+				D456DC1B1520B89F007CF3C7 /* Networking */,
+				D4CAE583151640810066C821 /* Supporting Files */,
+			);
+			path = dis;
+			sourceTree = "<group>";
+		};
+		D4CAE583151640810066C821 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D4C6689D15598C660019F23B /* deviceDatabase.sql */,
+				D4356BE81543691000E8EE02 /* GraphIMG.png */,
+				D4D821B7154582B3004AB66E /* powermeter.png */,
+				D4356BE91543691000E8EE02 /* TriggerManagerT.png */,
+				D48839DD15365C0000CA6DE4 /* triggerbtn.png */,
+				D48839D31536452F00CA6DE4 /* lightlevel.png */,
+				D48839CC15363C9E00CA6DE4 /* lightbulb_on.png */,
+				D48839D11536407600CA6DE4 /* humidity.png */,
+				D48839CD15363C9F00CA6DE4 /* lightbulb.png */,
+				D48839C91536289500CA6DE4 /* settingsbackground.png */,
+				D4AD9055151FD2280026BF46 /* thermometer.png */,
+				D4CAE5A91516476E0066C821 /* background.png */,
+				D4CAE584151640810066C821 /* dis-Info.plist */,
+				D4CAE585151640810066C821 /* InfoPlist.strings */,
+				D4CAE588151640810066C821 /* main.m */,
+				D4CAE58A151640810066C821 /* dis-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D4CAE577151640810066C821 /* dis */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4CAE599151640820066C821 /* Build configuration list for PBXNativeTarget "dis" */;
+			buildPhases = (
+				D4CAE574151640810066C821 /* Sources */,
+				D4CAE575151640810066C821 /* Frameworks */,
+				D4CAE576151640810066C821 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = dis;
+			productName = dis;
+			productReference = D4CAE578151640810066C821 /* dis.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D4CAE56F151640810066C821 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = D4CAE572151640810066C821 /* Build configuration list for PBXProject "dis" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D4CAE56D151640810066C821;
+			productRefGroup = D4CAE579151640810066C821 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D4CAE577151640810066C821 /* dis */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D4CAE576151640810066C821 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4CAE587151640810066C821 /* InfoPlist.strings in Resources */,
+				D4CAE590151640810066C821 /* MainStoryboard_iPhone.storyboard in Resources */,
+				D4CAE593151640820066C821 /* MainStoryboard_iPad.storyboard in Resources */,
+				D4CAE5AA1516476E0066C821 /* background.png in Resources */,
+				D48E587B151CB58800A20A8A /* RoomManager.m in Resources */,
+				D4AD9056151FD2280026BF46 /* thermometer.png in Resources */,
+				D456DC391520BF8D007CF3C7 /* DevicesManager.h in Resources */,
+				D48839A0153241D300CA6DE4 /* SettingsTableViewController.m in Resources */,
+				D48839B51533954900CA6DE4 /* TriggerManager.m in Resources */,
+				D48839CA1536289500CA6DE4 /* settingsbackground.png in Resources */,
+				D48839CF15363C9F00CA6DE4 /* lightbulb_on.png in Resources */,
+				D48839D015363C9F00CA6DE4 /* lightbulb.png in Resources */,
+				D48839D21536407600CA6DE4 /* humidity.png in Resources */,
+				D48839D41536452F00CA6DE4 /* lightlevel.png in Resources */,
+				D48839DE15365C0000CA6DE4 /* triggerbtn.png in Resources */,
+				D4356BEA1543691000E8EE02 /* GraphIMG.png in Resources */,
+				D4356BEB1543691000E8EE02 /* TriggerManagerT.png in Resources */,
+				D4D821B8154582B3004AB66E /* powermeter.png in Resources */,
+				D4C6689E15598C660019F23B /* deviceDatabase.sql in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D4CAE574151640810066C821 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D48839C2153451BF00CA6DE4 /* TriggerManager.m in Sources */,
+				D48839A51532601000CA6DE4 /* SettingsTableViewController.m in Sources */,
+				D48E5880151CC5AE00A20A8A /* RoomManager.m in Sources */,
+				D4CAE589151640810066C821 /* main.m in Sources */,
+				D4CAE58D151640810066C821 /* AppDelegate.m in Sources */,
+				D4CAE59E151643670066C821 /* FirstViewController.m in Sources */,
+				D4CAE5AD15164CD50066C821 /* SetupHouseViewController.m in Sources */,
+				D4CAE5B0151651310066C821 /* HouseView.m in Sources */,
+				D4431C851518D04500F613B8 /* HouseManager.m in Sources */,
+				D48E5878151CB51000A20A8A /* RoomView.m in Sources */,
+				D48E5879151CB51000A20A8A /* SetupRoomsViewController.m in Sources */,
+				D49C6203151D47A8003B1EDE /* Room.m in Sources */,
+				D4AD9049151F8EDA0026BF46 /* SetupDevicesViewController.m in Sources */,
+				D4AD9054151FC80E0026BF46 /* DeviceTableViewController.m in Sources */,
+				D456DC261520B8B6007CF3C7 /* DDAbstractDatabaseLogger.m in Sources */,
+				D456DC271520B8B6007CF3C7 /* DDASLLogger.m in Sources */,
+				D456DC281520B8B6007CF3C7 /* DDFileLogger.m in Sources */,
+				D456DC291520B8B6007CF3C7 /* DDLog.m in Sources */,
+				D456DC2A1520B8B6007CF3C7 /* DDTTYLogger.m in Sources */,
+				D456DC2E1520B940007CF3C7 /* ControlViewController.m in Sources */,
+				D456DC3B1520BFA1007CF3C7 /* DevicesManager.m in Sources */,
+				D456DC3E1520C010007CF3C7 /* Device.m in Sources */,
+				D456DC4815212B20007CF3C7 /* GCDAsyncSocket.m in Sources */,
+				D4BCD4B8152DA52B00DFA7D4 /* ControlDevicePopupViewController.m in Sources */,
+				D48839A815333C2C00CA6DE4 /* TriggerViewController.m in Sources */,
+				D48839AF15336EAA00CA6DE4 /* TimeTriggerViewController.m in Sources */,
+				D48839B215337A1500CA6DE4 /* TriggerTableViewController.m in Sources */,
+				D48839BE153447D700CA6DE4 /* TriggerTime.m in Sources */,
+				D48839C115344DF400CA6DE4 /* TriggerSensor.m in Sources */,
+				D471CF6D1538ACF60095C226 /* SharedNetworking.m in Sources */,
+				D4974D7D153CE1AB00F45CF9 /* EnergyViewController.m in Sources */,
+				D4356BE615435AEC00E8EE02 /* SharedViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D4CAE585151640810066C821 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D4CAE586151640810066C821 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D4CAE58E151640810066C821 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D4CAE58F151640810066C821 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		D4CAE591151640810066C821 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D4CAE592151640820066C821 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D4CAE597151640820066C821 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D4CAE598151640820066C821 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D4CAE59A151640820066C821 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "dis/dis-Prefix.pch";
+				INFOPLIST_FILE = "dis/dis-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				WARNING_CFLAGS = "-Wall";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D4CAE59B151640820066C821 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "dis/dis-Prefix.pch";
+				INFOPLIST_FILE = "dis/dis-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				WARNING_CFLAGS = "-Wall";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D4CAE572151640810066C821 /* Build configuration list for PBXProject "dis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4CAE597151640820066C821 /* Debug */,
+				D4CAE598151640820066C821 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4CAE599151640820066C821 /* Build configuration list for PBXNativeTarget "dis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4CAE59A151640820066C821 /* Debug */,
+				D4CAE59B151640820066C821 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D4CAE56F151640810066C821 /* Project object */;
+}

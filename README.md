@@ -3,15 +3,14 @@
 ##What is it?
 A home automation iOS App that works in conjunction with ZigBee home automation devices. It is a custom implementation that uses quartz2D to draw out a user interface of the house and control the devices inside.
 
-##What version does this work on?
- - This was tested on iOS 5.1 on an iPad2 - no reason why this wouldn't work on later versions.
-
-##What can it do?
  - Intuitively draw a birds eye view of house interface, including rooms and multiple floors
  - Place and easily move devices anywhere in house
  - Control many ZigBee lights and radiator devices and use information from light, tempurature and humidity sensors
  - Use time or sensor triggers for ITTT style programming
  - Display energy usage and graphing capability (see [HomeAutomation-SERVER](https://github.com/rmsmith88/HomeAutomation-SERVER) repo)
+
+##What version does this work on?
+ - This was tested on iOS 5.1 on an iPad2 - no reason why this wouldn't work on later versions.
 
 ##What software or libraries does it use?
  - Apple Framework – UIKit, Foundation, CoreGraphics and libsqlite3.
